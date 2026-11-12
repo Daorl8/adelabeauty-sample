@@ -117,6 +117,13 @@ ul{ padding:0; list-style:none; }
 .hero figure{ margin:0; padding:14px; background:var(--cream); }
 .hero figure img{ width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:var(--r); }
 
+/* 배경 무늬: 필기체 Adela 큰 글씨를 아주 옅게 (히어로 · 리뷰 두 곳만) */
+.hero, #review{ position:relative; overflow:hidden; }
+.hero::before, #review::before{ content:"Adela"; position:absolute; z-index:0; pointer-events:none; font-family:var(--script); line-height:1; color:var(--brown); opacity:.05; white-space:nowrap; }
+.hero::before{ font-size:clamp(14rem,38vw,30rem); right:-4%; bottom:-12%; }
+#review::before{ font-size:clamp(12rem,32vw,26rem); right:-6%; bottom:-14%; }
+.hero .wrap, #review .wrap{ position:relative; z-index:1; }
+
 /* 케어 */
 .care-grid{ display:grid; grid-template-columns:minmax(0,1fr); gap:20px; }
 @media (min-width:640px){ .care-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
@@ -238,7 +245,7 @@ ul{ padding:0; list-style:none; }
         </div>
         <p class="note"><b>매일 10:00 ~ 22:00</b> · 100% 예약제 · 당일 예약 가능</p>
       </div>
-      <figure class="reveal" style="--d:.1s"><img src="ad-hero.webp" alt="분홍 리본을 묶은 하얀 선물 쇼핑백과 케어 제품 상자" width="864" height="1080" fetchpriority="high" /></figure>
+      <figure class="reveal" style="--d:.1s"><img src="ad-hero.webp" alt="긴 머리를 내리고 턱에 손을 댄 여성" width="864" height="1080" fetchpriority="high" /></figure>
     </div>
   </section>
 
@@ -455,7 +462,6 @@ ul{ padding:0; list-style:none; }
   /* 로고 손글씨: 글자 외곽선을 차례로 그린 뒤 채움 (setInterval 구동) */
   (function(){
     var svg=document.querySelector('.logo-svg'); if(!svg||!svg.querySelectorAll) return;
-    if(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     var ps=[].slice.call(svg.querySelectorAll('path')), lens=[];
     try{ ps.forEach(function(p){ var L=p.getTotalLength(); lens.push(L); p.style.strokeDasharray=L; p.style.strokeDashoffset=L; }); }catch(e){ return; }
     svg.classList.add('draw');
