@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Adela Beauty 아델라뷰티 청주점 | 왁싱 · 속눈썹 · 패디플래닝</title>
+<meta name="description" content="아름다움에 취하다, 아델라뷰티 청주점. 남녀 브라질리언 왁싱, 속눈썹 펌과 연장, 패디플래닝, 멜라닌케어. 100% 예약제 1인샵. 충북 청주시 흥덕구 성봉로279번길 22-6, 충북대 정문 도보 6분." />
+<link rel="canonical" href="https://adelabeauty-sample.lgt3232.workers.dev/" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="ko_KR" />
+<meta property="og:site_name" content="Adela Beauty 아델라뷰티" />
+<meta property="og:title" content="Adela Beauty · 아름다움에 취하다" />
+<meta property="og:description" content="섬세한 손끝에서 완성되는 디테일한 케어. 청주 충북대 앞 100% 예약제 왁싱 · 속눈썹 · 패디플래닝." />
+<meta property="og:url" content="https://adelabeauty-sample.lgt3232.workers.dev/" />
+<meta property="og:image" content="https://adelabeauty-sample.lgt3232.workers.dev/og-adela.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#F3EDE7" />
+<link rel="icon" href="favicon.png" type="image/png" />
+<!-- 시안 도메인 = adelabeauty-sample.lgt3232.workers.dev. 고객 인계 시 grep lgt3232 → canonical·og:url·og:image·JSON-LD url/image 치환 -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Adela Beauty 아델라뷰티 청주점",
+  "url": "https://adelabeauty-sample.lgt3232.workers.dev/",
+  "image": "https://adelabeauty-sample.lgt3232.workers.dev/og-adela.jpg",
+  "telephone": "+82-507-1460-0294",
+  "address": { "@type": "PostalAddress", "streetAddress": "성봉로279번길 22-6 1층 101호", "addressLocality": "청주시 흥덕구", "addressRegion": "충청북도", "addressCountry": "KR" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "10:00", "closes": "22:00" }
+  ],
+  "sameAs": ["https://www.instagram.com/adela.__.beauty/", "https://blog.naver.com/adela_beauty"]
+}
+</script>
+<style>
+@font-face{ font-family:"AD Script"; font-weight:400; font-display:swap; src:url("ad-script.woff2") format("woff2"); }
+@font-face{ font-family:"AD Sans"; font-weight:300 700; font-display:swap; src:url("ad-pretendard.woff2") format("woff2"); }
+
+:root{
+  --cream:#F3EDE7;
+  --paper:#FFFFFF;
+  --ink:#3B332D;
+  --soft:#6E6259;
+  --brown:#6B4B2E;
+  --sage:#9AA697;
+  --chip:#F4F2F0;
+  --line:#E4DAD0;
+  --script:"AD Script","AD Sans",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --sans:"AD Sans",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --wrap:1080px;
+  --r:2px;
+}
+*,*::before,*::after{ box-sizing:border-box; }
+html{ -webkit-text-size-adjust:100%; }
+body{ margin:0; background:var(--cream); color:var(--ink); font-family:var(--sans); font-weight:400; font-size:16px; line-height:1.8; word-break:keep-all; overflow-wrap:break-word; }
+img{ max-width:100%; height:auto; display:block; }
+a{ color:inherit; text-decoration:none; }
+h1,h2,h3,p,ul,dl,dd{ margin:0; }
+ul{ padding:0; list-style:none; }
+:focus-visible{ outline:2px solid var(--brown); outline-offset:3px; }
+.wrap{ width:min(100% - 40px, var(--wrap)); margin:0 auto; }
+.sec{ padding:88px 0; }
+@media (min-width:900px){ .sec{ padding:128px 0; } }
+
+/* 섹션 머리: 스크립트 영문 + 갈색 가는 선 */
+.head{ display:flex; align-items:flex-end; justify-content:space-between; gap:16px; padding-bottom:14px; border-bottom:1px solid var(--brown); margin-bottom:40px; }
+.head .script{ font-family:var(--script); font-weight:400; font-size:clamp(3rem,9vw,4.6rem); line-height:1; color:var(--brown); letter-spacing:0; }
+.head h2{ font-size:1.02rem; font-weight:600; color:var(--ink); letter-spacing:.02em; padding-bottom:6px; }
+.stars{ display:flex; gap:6px; padding-bottom:10px; }
+.stars svg{ width:22px; height:22px; fill:var(--sage); }
+.sr-only{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+.sub{ max-width:34em; color:var(--soft); margin:-14px 0 40px; }
+
+.btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:50px; padding:0 24px; border:1px solid var(--brown); border-radius:var(--r); color:var(--brown); font-size:.94rem; font-weight:600; background:transparent; transition:background .2s ease, color .2s ease, transform .15s ease; }
+.btn.fill{ background:var(--brown); color:#FFFFFF; }
+.btn:active{ transform:scale(.98); }
+@media (hover:hover){ .btn:not(.fill):hover{ background:var(--brown); color:#FFFFFF; } .btn.fill:hover{ background:#4F3620; border-color:#4F3620; } }
+
+/* 헤더 */
+.site-head{ position:sticky; top:0; z-index:50; background:rgba(243,237,231,.96); border-bottom:1px solid var(--line); }
+.site-head .wrap{ display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:64px; }
+.brand{ display:flex; align-items:baseline; gap:10px; }
+.brand b{ font-family:var(--script); font-weight:400; font-size:2.1rem; line-height:1; color:var(--brown); }
+.brand small{ font-size:.8rem; font-weight:600; color:var(--soft); }
+.nav{ display:none; gap:28px; font-size:.92rem; color:var(--soft); }
+.head-cta{ display:none; gap:8px; }
+.head-cta .btn{ min-height:40px; padding:0 16px; font-size:.84rem; }
+@media (min-width:900px){
+  .site-head .wrap{ display:grid; grid-template-columns:minmax(0,1fr) auto minmax(0,1fr); }
+  .nav{ display:flex; }
+  .head-cta{ display:flex; justify-self:end; }
+}
+@media (hover:hover){ .nav a:hover{ color:var(--brown); } }
+
+/* 히어로 */
+.hero{ padding:44px 0 88px; }
+@media (min-width:900px){ .hero{ padding:80px 0 128px; } }
+.hero .wrap{ display:grid; gap:40px; align-items:center; }
+@media (min-width:900px){ .hero .wrap{ grid-template-columns:minmax(0,6fr) minmax(0,5fr); gap:72px; } }
+.hero .place{ font-size:.86rem; font-weight:600; color:var(--soft); letter-spacing:.04em; }
+.hero .logo{ margin-top:10px; font-family:var(--script); font-weight:400; font-size:clamp(3rem,13vw,5.6rem); line-height:1.05; color:var(--brown); white-space:nowrap; }
+.hero .motto{ margin-top:4px; padding-bottom:18px; border-bottom:1px solid var(--brown); font-size:1rem; font-weight:600; letter-spacing:.06em; }
+.hero h1{ margin-top:28px; font-weight:600; font-size:clamp(1.55rem,4vw,2.2rem); line-height:1.45; letter-spacing:-.02em; }
+.hero .lead{ margin-top:16px; max-width:30em; color:var(--soft); }
+.hero .cta{ display:flex; flex-wrap:wrap; gap:8px; margin-top:30px; }
+.hero .note{ margin-top:18px; font-size:.9rem; color:var(--soft); }
+.hero .note b{ color:var(--ink); font-weight:600; }
+.hero figure{ margin:0; padding:14px; background:var(--paper); }
+.hero figure img{ width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:var(--r); }
+
+/* 케어 */
+.care-grid{ display:grid; grid-template-columns:minmax(0,1fr); gap:20px; }
+@media (min-width:640px){ .care-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (min-width:900px){ .care-grid{ grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; } }
+.card{ background:var(--paper); padding:18px 18px 24px; }
+.card img{ width:100%; aspect-ratio:1; object-fit:cover; border-radius:var(--r); }
+.card .no{ display:block; margin-top:18px; font-size:.8rem; font-weight:600; color:var(--soft); letter-spacing:.08em; }
+.card .en{ display:block; font-family:var(--script); font-size:2.3rem; line-height:1.15; color:var(--brown); }
+.card h3{ font-size:1.08rem; font-weight:600; }
+.card ul{ margin-top:12px; display:grid; gap:4px; }
+.card li{ position:relative; padding-left:14px; font-size:.93rem; color:var(--soft); }
+.card li::before{ content:""; position:absolute; left:0; top:.8em; width:5px; height:5px; border-radius:50%; background:var(--sage); }
+.card.text-only{ display:flex; flex-direction:column; justify-content:center; }
+.card.text-only .no{ margin-top:0; }
+.card .more{ margin-top:18px; }
+
+/* 리뷰 */
+.reviews{ display:grid; grid-auto-flow:column; grid-auto-columns:minmax(0,86%); gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:10px; scrollbar-width:thin; }
+@media (min-width:900px){ .reviews{ grid-auto-flow:row; grid-auto-columns:auto; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; overflow:visible; } }
+.review{ scroll-snap-align:start; background:var(--paper); padding:26px 24px; display:flex; flex-direction:column; gap:12px; }
+.review .top{ display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.review .who{ font-weight:600; font-size:.95rem; }
+.review .mini{ display:flex; gap:3px; }
+.review .mini svg{ width:14px; height:14px; fill:var(--sage); }
+.review p{ color:var(--ink); font-size:.96rem; }
+.chips{ display:flex; flex-wrap:wrap; gap:6px; margin-top:4px; }
+.chips span{ padding:4px 10px; background:var(--chip); border-radius:var(--r); font-size:.84rem; color:var(--ink); }
+.review-src{ margin-top:18px; font-size:.86rem; color:var(--soft); }
+
+/* 가격 */
+.price-grid{ display:grid; grid-template-columns:minmax(0,1fr); gap:24px; }
+@media (min-width:900px){ .price-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; } }
+.price{ background:var(--paper); padding:26px 24px 12px; }
+.price h3{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; padding-bottom:10px; border-bottom:1px solid var(--brown); font-size:1.04rem; font-weight:600; }
+.price h3 span{ font-family:var(--script); font-weight:400; font-size:1.9rem; line-height:1; color:var(--brown); }
+.price dl div{ display:grid; grid-template-columns:minmax(0,1fr) auto; gap:14px; padding:12px 0; border-bottom:1px solid var(--line); font-size:.94rem; }
+.price dl div:last-child{ border-bottom:0; }
+.price dt small{ display:block; font-size:.82rem; color:var(--soft); }
+.price dd{ font-variant-numeric:tabular-nums; white-space:nowrap; font-weight:500; }
+.price-note{ margin-top:24px; padding:20px 22px; border:1px solid var(--brown); display:grid; gap:12px; font-size:.94rem; }
+@media (min-width:900px){ .price-note{ grid-template-columns:minmax(0,1fr) auto; align-items:center; } }
+
+/* 예약 안내 */
+.book{ background:var(--paper); padding:30px 26px; display:grid; gap:24px; }
+@media (min-width:900px){ .book{ grid-template-columns:minmax(0,1fr) auto; align-items:center; padding:40px 44px; } }
+.book ul{ display:grid; gap:8px; }
+.book li{ position:relative; padding-left:16px; color:var(--ink); }
+.book li::before{ content:""; position:absolute; left:0; top:.78em; width:6px; height:6px; border-radius:50%; background:var(--sage); }
+.book li small{ display:block; color:var(--soft); font-size:.88rem; }
+.book .cta{ display:grid; gap:8px; }
+@media (min-width:900px){ .book .cta{ min-width:220px; } }
+
+/* 오시는 길 */
+.visit-grid{ display:grid; gap:32px; }
+@media (min-width:900px){ .visit-grid{ grid-template-columns:minmax(0,5fr) minmax(0,6fr); gap:56px; align-items:center; } }
+.info div{ display:grid; grid-template-columns:72px minmax(0,1fr); gap:12px; padding:15px 0; border-bottom:1px solid var(--line); }
+.info div:first-child{ border-top:1px solid var(--line); }
+.info dt{ font-weight:600; }
+.info dd{ color:var(--soft); font-size:.95rem; }
+.info dd small{ display:block; margin-top:3px; font-size:.86rem; }
+.info dd a{ color:var(--ink); text-decoration:underline; text-underline-offset:3px; }
+.visit .cta{ margin-top:24px; display:flex; flex-wrap:wrap; gap:8px; }
+.map{ width:100%; height:240px; border:0; border-radius:var(--r); background:var(--paper); }
+@media (min-width:768px){ .map{ height:auto; aspect-ratio:4/3; } }
+
+/* 푸터 */
+.foot{ border-top:1px solid var(--brown); padding:52px 0 calc(110px + env(safe-area-inset-bottom)); text-align:center; font-size:.86rem; color:var(--soft); }
+@media (min-width:900px){ .foot{ padding:60px 0; } }
+.foot .logo{ font-family:var(--script); font-size:2.6rem; line-height:1; color:var(--brown); }
+.foot p + p{ margin-top:6px; }
+.foot a{ text-decoration:underline; text-underline-offset:3px; }
+
+/* 모바일 하단 바 */
+.quick{ position:fixed; left:0; right:0; bottom:0; z-index:60; display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr); gap:6px; padding:8px 10px calc(8px + env(safe-area-inset-bottom)); background:#F3EDE7; border-top:1px solid var(--line); }
+.quick a{ display:flex; align-items:center; justify-content:center; min-height:48px; border:1px solid var(--brown); border-radius:var(--r); color:var(--brown); font-size:.88rem; font-weight:600; background:#FFFFFF; }
+.quick a.fill{ background:var(--brown); color:#FFFFFF; }
+@media (min-width:900px){ .quick{ display:none; } }
+
+/* 리빌 */
+.js .reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s cubic-bezier(.2,.7,.2,1); transition-delay:var(--d,0s); }
+.js .reveal.in{ opacity:1; transform:none; }
+@media (prefers-reduced-motion:reduce){ .js .reveal{ transition:none; opacity:1; transform:none; } }
+@media print{ .js .reveal{ opacity:1; transform:none; } }
+</style>
+<noscript><style>.reveal{ opacity:1 !important; transform:none !important; }</style></noscript>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="star" viewBox="0 0 24 24"><path d="M12 2.6l2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.3l-5.9 3.2 1.3-6.5L2.5 9.4l6.6-.8z"/></symbol></svg>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="아델라뷰티 처음으로"><b>Adela Beauty</b><small>청주점</small></a>
+    <nav class="nav" aria-label="주요 메뉴"><a href="#care">시술</a><a href="#review">리뷰</a><a href="#price">가격</a><a href="#book">예약 안내</a><a href="#visit">오시는 길</a></nav>
+    <div class="head-cta">
+      <a class="btn" href="https://pf.kakao.com/_AfxkPxj" target="_blank" rel="noopener">카카오톡</a>
+      <a class="btn fill" href="https://m.place.naver.com/place/1826306945/home" target="_blank" rel="noopener">네이버 예약</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="reveal">
+        <p class="place">청주 · 충북대 정문 도보 6분</p>
+        <p class="logo" aria-hidden="true">Adela Beauty</p>
+        <p class="motto">아름다움에 취하다.</p>
+        <h1>섬세한 손끝에서 완성되는<br />디테일한 케어</h1>
+        <p class="lead">아델라뷰티는 오롯이 고객님 한 분께 집중하고자 100% 예약제로 운영해요. 저마다 다른 눈매, 피부, 니즈에 딱 맞춘 예쁜 디자인을 제안드려요.</p>
+        <div class="cta">
+          <a class="btn fill" href="https://m.place.naver.com/place/1826306945/home" target="_blank" rel="noopener">네이버 예약</a>
+          <a class="btn" href="https://pf.kakao.com/_AfxkPxj" target="_blank" rel="noopener">카카오톡 문의</a>
+        </div>
+        <p class="note"><b>매일 10:00 ~ 22:00</b> · 100% 예약제 · 당일 예약 가능</p>
+      </div>
+      <figure class="reveal" style="--d:.1s"><img src="ad-hero.webp" alt="튤립 꽃병 옆에 놓인 케어 제품" width="1080" height="1080" fetchpriority="high" /></figure>
+    </div>
+  </section>
+
+  <section class="sec" id="care" aria-labelledby="care-h">
+    <div class="wrap">
+      <div class="head reveal"><span class="script" aria-hidden="true">Care</span><h2 id="care-h">시술 안내</h2></div>
+      <div class="care-grid">
+        <article class="card reveal">
+          <img src="ad-wax.webp" alt="토끼 인형을 안고 있는 브라질리언 왁싱 완료 고객" width="1000" height="1000" loading="lazy" />
+          <span class="no">01</span><span class="en" aria-hidden="true">Waxing</span><h3>왁싱</h3>
+          <ul><li>남녀 브라질리언 전문</li><li>바디 &amp; 페이스 왁싱</li><li>제이앤코 하드 · 소프트 왁스 사용</li><li>No 더블딥으로 위생 철저</li><li>통증 최소화를 위한 스피드한 시술</li><li>끈적임 없는 보습 크림으로 마무리</li></ul>
+        </article>
+        <article class="card reveal">
+          <img src="ad-perm.webp" alt="속눈썹 펌으로 컬을 살린 눈매" width="1000" height="1000" loading="lazy" />
+          <span class="no">02</span><span class="en" aria-hidden="true">Lash Perm</span><h3>속눈썹 펌</h3>
+          <ul><li>눈매에 맞춘 롯드 선택</li><li>시술 후 고급 영양제 도포 + 브러쉬 증정</li><li>손상 보호 · 고영양 추가 케어 가능</li><li>4~6주 유지력</li></ul>
+        </article>
+        <article class="card reveal">
+          <img src="ad-ext.webp" alt="자연스럽게 연장한 속눈썹" width="1000" height="1000" loading="lazy" />
+          <span class="no">03</span><span class="en" aria-hidden="true">Lash Extensions</span><h3>속눈썹 연장</h3>
+          <ul><li>자연스럽고 가벼운 고급 플랫모 사용</li><li>시술 후 브러쉬 증정</li><li>4주 유지력 · 2주 이내 리터치 가능</li></ul>
+        </article>
+        <article class="card reveal">
+          <img src="ad-pedi.webp" alt="패디플래닝 전과 후 발뒤꿈치 비교" width="1000" height="1000" loading="lazy" />
+          <span class="no">04</span><span class="en" aria-hidden="true">Pedi-planning</span><h3>패디플래닝</h3>
+          <ul><li>발각질과 노폐물을 부드럽게 제거</li><li>즉시 효과 · 혈액순환 도움</li><li>풋밤 전용 크림 판매</li></ul>
+        </article>
+        <article class="card text-only reveal">
+          <span class="no">05</span><span class="en" aria-hidden="true">Melanin Care</span><h3>멜라닌케어</h3>
+          <ul><li>통증 없이 1회 케어</li><li>칙칙해진 피부 톤을 핑크빛으로 되돌리는 케어</li></ul>
+        </article>
+        <article class="card text-only reveal">
+          <span class="no">Instagram</span><span class="en" aria-hidden="true">More</span><h3>시술 사진과 소식</h3>
+          <ul><li>더 많은 시술 사진과 이벤트는 인스타그램에서 확인하실 수 있어요</li></ul>
+          <div class="more"><a class="btn" href="https://www.instagram.com/adela.__.beauty/" target="_blank" rel="noopener">@adela.__.beauty</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="review" aria-labelledby="review-h">
+    <div class="wrap">
+      <div class="head reveal">
+        <div><span class="script" aria-hidden="true">Review</span><h2 id="review-h" class="sr-only">고객 리뷰</h2></div>
+        <div class="stars" role="img" aria-label="별점 다섯 개"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></div>
+      </div>
+      <div class="reviews reveal">
+        <article class="review">
+          <div class="top"><span class="who">방문자 리뷰</span><span class="mini" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></div>
+          <p>청주왁싱 맛집이에요. 브라질리언 왁싱 넘 빨리 끝나고 좋음,, 손이 빠르셔서 덜아프게 잘 끝난ㅋㅋ 주차도 되고 분위기도 편안해서 계속 올거 같은 맛집,,</p>
+          <div class="chips"><span>시술이 꼼꼼해요</span><span>친절해요</span><span>손이 빨라요</span><span>분위기가 편안해요</span><span>주차하기 편해요</span></div>
+        </article>
+        <article class="review">
+          <div class="top"><span class="who">방문자 리뷰</span><span class="mini" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></div>
+          <p>이제 여름이니까~~ 아프지만 큰맘먹고 브왁도전했거든영!! 근데 요기 생각했던것보다 훨씬 아프지두 않구 후다닥 끝내주셔서 좋았어용. 샵도 깔끔하구 쌤도 친절하시구~ 덕분에 기분좋게 브왁받고 깔끔하게 나왔네욥 :)</p>
+        </article>
+        <article class="review">
+          <div class="top"><span class="who">방문자 리뷰</span><span class="mini" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></div>
+          <p>청주 여자 브라질리언 왁싱으로 추천해요!!! 사장님께서 친절하고 빠르게 해주셔서 너무 좋았어요. 충북대학교 근처라 접근성도 좋아요!! ㅎㅎㅎ</p>
+        </article>
+        <article class="review">
+          <div class="top"><span class="who">방문자 리뷰</span><span class="mini" aria-hidden="true"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span></div>
+          <p>첫 시술이여서 걱정도 되고 민망했는데 그런거 생각 하나도 안나게 손도 빠르시고 안아프게 시술 받았습니다. 재방문 의사 100프로입니다 !!</p>
+        </article>
+      </div>
+      <p class="review-src reveal">네이버 방문자 리뷰에서 옮겼어요.</p>
+    </div>
+  </section>
+
+  <section class="sec" id="price" aria-labelledby="price-h">
+    <div class="wrap">
+      <div class="head reveal"><span class="script" aria-hidden="true">Price</span><h2 id="price-h">기본 가격</h2></div>
+      <div class="price-grid">
+        <div class="price reveal">
+          <h3>브라질리언 왁싱 <span aria-hidden="true">Brazilian</span></h3>
+          <dl>
+            <div><dt>여자 브라질리언</dt><dd>60,000원</dd></div>
+            <div><dt>남자 브라질리언</dt><dd>80,000원</dd></div>
+            <div><dt>여자 브라질리언<small>3회 회원권</small></dt><dd>165,000원</dd></div>
+            <div><dt>남자 브라질리언<small>3회 회원권</small></dt><dd>225,000원</dd></div>
+          </dl>
+        </div>
+        <div class="price reveal">
+          <h3>바디 · 페이스 왁싱 <span aria-hidden="true">Body &amp; Face</span></h3>
+          <dl>
+            <div><dt>팔 전체<small>여자 · 남자</small></dt><dd>60,000 · 80,000원</dd></div>
+            <div><dt>팔 하프<small>여자 · 남자</small></dt><dd>40,000 · 60,000원</dd></div>
+            <div><dt>다리 전체<small>여자 · 남자</small></dt><dd>80,000 · 120,000원</dd></div>
+            <div><dt>다리 하프 (종아리)<small>여자 · 남자</small></dt><dd>50,000 · 80,000원</dd></div>
+            <div><dt>남자 상체 전체 (가슴 + 배)</dt><dd>70,000원</dd></div>
+            <div><dt>남성 턱수염</dt><dd>50,000원</dd></div>
+            <div><dt>겨드랑이</dt><dd>25,000원</dd></div>
+            <div><dt>눈썹 + 미간</dt><dd>25,000원</dd></div>
+            <div><dt>헤어라인 + 이마</dt><dd>40,000원</dd></div>
+            <div><dt>뒷목 라인</dt><dd>40,000원</dd></div>
+            <div><dt>배렛나루 (배꼽 밑 부위)</dt><dd>10,000원</dd></div>
+            <div><dt>항문</dt><dd>20,000원</dd></div>
+          </dl>
+        </div>
+        <div class="price reveal">
+          <h3>속눈썹 <span aria-hidden="true">Lash</span></h3>
+          <dl>
+            <div><dt>속눈썹 펌 영양 케어 펌</dt><dd>35,000원</dd></div>
+            <div><dt>속눈썹 연장 플랫모</dt><dd>55,000원</dd></div>
+            <div><dt>숱 추가 서비스</dt><dd>무료</dd></div>
+            <div><dt>타 샵 제거</dt><dd>10,000원</dd></div>
+            <div><dt>2주 리터치</dt><dd>25,000원</dd></div>
+          </dl>
+        </div>
+        <div class="price reveal">
+          <h3>패디플래닝 <span aria-hidden="true">Pedi</span></h3>
+          <dl>
+            <div><dt>패디플래닝<small>여자 · 남자</small></dt><dd>55,000 · 65,000원</dd></div>
+            <div><dt>3회 회원권<small>여자 · 남자</small></dt><dd>150,000 · 180,000원</dd></div>
+          </dl>
+        </div>
+      </div>
+      <div class="price-note reveal">
+        <p>첫 방문 할인과 멜라닌케어 가격, 진행 중인 이벤트는 네이버 예약에서 확인해 주세요.</p>
+        <a class="btn fill" href="https://m.place.naver.com/place/1826306945/home" target="_blank" rel="noopener">이벤트 확인하기</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="book" aria-labelledby="book-h">
+    <div class="wrap">
+      <div class="head reveal"><span class="script" aria-hidden="true">Booking</span><h2 id="book-h">예약 안내</h2></div>
+      <div class="book reveal">
+        <ul>
+          <li>100% 예약제로 운영해요</li>
+          <li>당일 예약도 가능해요<small>최소 1시간 전에 미리 연락 부탁드려요</small></li>
+          <li>전화 주시면 빠르게 예약하실 수 있어요<small>1인샵이라 시술이나 상담 중에는 전화가 어려울 수 있어요. 네이버 톡톡이나 문자 주시면 확인 후 순서대로 답변드려요</small></li>
+        </ul>
+        <div class="cta">
+          <a class="btn fill" href="https://m.place.naver.com/place/1826306945/home" target="_blank" rel="noopener">네이버 예약</a>
+          <a class="btn" href="https://pf.kakao.com/_AfxkPxj" target="_blank" rel="noopener">카카오톡 문의</a>
+          <a class="btn" href="tel:050714600294">전화 0507-1460-0294</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec visit" id="visit" aria-labelledby="visit-h">
+    <div class="wrap">
+      <div class="head reveal"><span class="script" aria-hidden="true">Visit</span><h2 id="visit-h">오시는 길</h2></div>
+      <div class="visit-grid">
+        <div class="reveal">
+          <dl class="info">
+            <div><dt>주소</dt><dd>충북 청주시 흥덕구 성봉로279번길 22-6 1층 101호</dd></div>
+            <div><dt>도보</dt><dd>충북대 정문에서 도보 6분</dd></div>
+            <div><dt>버스</dt><dd>충청북도 교육도서관 임시청사 정류장 하차 후 도보 3분</dd></div>
+            <div><dt>자차</dt><dd>네이버 지도나 카카오맵에서 아델라뷰티 또는 주소를 검색하시면 바로 안내받으실 수 있어요</dd></div>
+            <div><dt>주차</dt><dd>매장이 건물 1층이라 도착 후 바로 들어오실 수 있어요<small>빌라 건물 주차장이나 가게 문 앞에 편하게 주차하세요</small></dd></div>
+            <div><dt>영업</dt><dd>매일 10:00 ~ 22:00<small>100% 예약제</small></dd></div>
+            <div><dt>전화</dt><dd><a href="tel:050714600294">0507-1460-0294</a></dd></div>
+          </dl>
+          <div class="cta">
+            <a class="btn fill" href="https://map.naver.com/p/entry/place/1826306945" target="_blank" rel="noopener">네이버 길찾기</a>
+            <a class="btn" href="https://www.instagram.com/adela.__.beauty/" target="_blank" rel="noopener">인스타그램</a>
+            <a class="btn" href="https://blog.naver.com/adela_beauty" target="_blank" rel="noopener">블로그</a>
+          </div>
+        </div>
+        <iframe class="map reveal" title="아델라뷰티 위치 지도" src="https://www.google.com/maps?q=%EC%B6%A9%EB%B6%81%20%EC%B2%AD%EC%A3%BC%EC%8B%9C%20%ED%9D%A5%EB%8D%95%EA%B5%AC%20%EC%84%B1%EB%B4%89%EB%A1%9C279%EB%B2%88%EA%B8%B8%2022-6&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p class="logo" aria-hidden="true">Adela Beauty</p>
+    <p>아델라뷰티 청주점 · 아름다움에 취하다.</p>
+    <p>충북 청주시 흥덕구 성봉로279번길 22-6 1층 101호 · <a href="tel:050714600294">0507-1460-0294</a> · <a href="https://www.instagram.com/adela.__.beauty/" target="_blank" rel="noopener">@adela.__.beauty</a></p>
+    <p>© Adela Beauty</p>
+  </div>
+</footer>
+
+<nav class="quick" aria-label="빠른 연결">
+  <a class="fill" href="https://m.place.naver.com/place/1826306945/home" target="_blank" rel="noopener">네이버 예약</a>
+  <a href="https://pf.kakao.com/_AfxkPxj" target="_blank" rel="noopener">카카오톡</a>
+  <a href="tel:050714600294">전화</a>
+</nav>
+
+<script>
+(function(){
+  var pending=[].slice.call(document.querySelectorAll('.reveal'));
+  pending.forEach(function(el){
+    var sib=[].slice.call(el.parentNode.children).filter(function(c){ return c.classList.contains('reveal'); });
+    if(sib.length>1 && !el.style.getPropertyValue('--d')){ el.style.setProperty('--d',(Math.min(sib.indexOf(el),4)*0.06)+'s'); }
+  });
+  function showAll(){ pending.forEach(function(el){ el.classList.add('in'); }); pending=[]; }
+  function start(){
+    var t=setInterval(function(){
+      if(!pending.length){ clearInterval(t); return; }
+      if(window.innerHeight + window.pageYOffset >= document.documentElement.scrollHeight - 4){ showAll(); return; }
+      var line=window.innerHeight*0.92;
+      pending=pending.filter(function(el){
+        if(el.getBoundingClientRect().top < line){ el.classList.add('in'); return false; }
+        return true;
+      });
+    },120);
+  }
+  var started=false; function go(){ if(started) return; started=true; start(); }
+  if(document.fonts && document.fonts.ready){ document.fonts.ready.then(go); }
+  setTimeout(go,1200);
+  setTimeout(function(){ document.querySelectorAll('.hero .reveal').forEach(function(el){ el.classList.add('in'); }); },2500);
+  var head=document.querySelector('.site-head');
+  [].forEach.call(document.querySelectorAll('a[href^="#"]'),function(a){
+    a.addEventListener('click',function(e){
+      var id=a.getAttribute('href'); var el=id==='#top'?document.body:document.querySelector(id);
+      if(!el) return; e.preventDefault();
+      var start=window.pageYOffset, end=id==='#top'?0:el.getBoundingClientRect().top+start-head.offsetHeight+1;
+      var t0=Date.now(), dur=520;
+      var iv=setInterval(function(){
+        var p=Math.min((Date.now()-t0)/dur,1), e2=p<.5?2*p*p:1-Math.pow(-2*p+2,2)/2;
+        window.scrollTo(0,start+(end-start)*e2);
+        if(p>=1) clearInterval(iv);
+      },16);
+    });
+  });
+})();
+</script>
+</body>
+</html>
