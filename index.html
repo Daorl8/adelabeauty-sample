@@ -146,9 +146,9 @@ ul{ padding:0; list-style:none; }
 .panel .btn{ min-height:44px; padding:0 18px; font-size:.88rem; }
 
 /* 리뷰 */
-.reviews{ display:grid; grid-auto-flow:column; grid-auto-columns:minmax(0,86%); gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:10px; scrollbar-width:thin; }
-@media (min-width:900px){ .reviews{ grid-auto-flow:row; grid-auto-columns:auto; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; overflow:visible; } }
-.review{ scroll-snap-align:start; background:var(--card); padding:26px 24px; display:flex; flex-direction:column; gap:12px; }
+.reviews{ display:grid; grid-template-columns:minmax(0,1fr); gap:14px; }
+@media (min-width:768px){ .reviews{ grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; } }
+.review{ background:var(--card); padding:26px 24px; display:flex; flex-direction:column; gap:12px; }
 .review .top{ display:flex; justify-content:space-between; align-items:center; gap:12px; }
 .review .who{ font-weight:600; font-size:.95rem; }
 .review .mini{ display:flex; gap:3px; }
@@ -160,7 +160,12 @@ ul{ padding:0; list-style:none; }
 
 /* 가격 */
 .price-grid{ display:grid; grid-template-columns:minmax(0,1fr); gap:24px; }
-@media (min-width:900px){ .price-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; } }
+@media (min-width:900px){
+  .price-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); grid-template-areas:"a b" "c b" "d b"; gap:24px; align-items:start; }
+  .p-a{ grid-area:a; } .p-c{ grid-area:c; } .p-d{ grid-area:d; }
+  .p-b{ grid-area:b; align-self:stretch; display:flex; flex-direction:column; }
+  .p-b dl{ flex:1; display:flex; flex-direction:column; justify-content:space-between; }
+}
 .price{ background:var(--card); padding:26px 24px 12px; }
 .price h3{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; padding-bottom:10px; border-bottom:1px solid var(--brown); font-size:1.04rem; font-weight:600; }
 .price h3 span{ font-family:var(--script); font-weight:400; font-size:1.9rem; line-height:1; color:var(--brown); }
@@ -190,7 +195,9 @@ ul{ padding:0; list-style:none; }
 .info dd{ color:var(--soft); font-size:.95rem; }
 .info dd small{ display:block; margin-top:3px; font-size:.86rem; }
 .info dd a{ color:var(--ink); text-decoration:underline; text-underline-offset:3px; }
-.visit .cta{ margin-top:24px; display:flex; flex-wrap:wrap; gap:8px; }
+.visit .cta{ margin-top:24px; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:8px; }
+.visit .cta .btn:first-child{ grid-column:1 / -1; }
+@media (min-width:768px){ .visit .cta{ display:flex; flex-wrap:wrap; } }
 .map{ width:100%; height:240px; border:0; border-radius:var(--r); background:var(--paper); }
 @media (min-width:768px){ .map{ height:auto; aspect-ratio:4/3; } }
 
@@ -326,7 +333,7 @@ ul{ padding:0; list-style:none; }
     <div class="wrap">
       <div class="head reveal"><span class="script" aria-hidden="true">Price</span><h2 id="price-h">기본 가격</h2></div>
       <div class="price-grid">
-        <div class="price reveal">
+        <div class="price p-a reveal">
           <h3>브라질리언 왁싱 <span aria-hidden="true">Brazilian</span></h3>
           <dl>
             <div><dt>여자 브라질리언</dt><dd>60,000원</dd></div>
@@ -335,7 +342,7 @@ ul{ padding:0; list-style:none; }
             <div><dt>남자 브라질리언<small>3회 회원권</small></dt><dd>225,000원</dd></div>
           </dl>
         </div>
-        <div class="price reveal">
+        <div class="price p-b reveal">
           <h3>바디 · 페이스 왁싱 <span aria-hidden="true">Body &amp; Face</span></h3>
           <dl>
             <div><dt>팔 전체<small>여자 · 남자</small></dt><dd>60,000 · 80,000원</dd></div>
@@ -352,7 +359,7 @@ ul{ padding:0; list-style:none; }
             <div><dt>항문</dt><dd>20,000원</dd></div>
           </dl>
         </div>
-        <div class="price reveal">
+        <div class="price p-c reveal">
           <h3>속눈썹 <span aria-hidden="true">Lash</span></h3>
           <dl>
             <div><dt>속눈썹 펌 영양 케어 펌</dt><dd>35,000원</dd></div>
@@ -362,7 +369,7 @@ ul{ padding:0; list-style:none; }
             <div><dt>2주 리터치</dt><dd>25,000원</dd></div>
           </dl>
         </div>
-        <div class="price reveal">
+        <div class="price p-d reveal">
           <h3>패디플래닝 <span aria-hidden="true">Pedi</span></h3>
           <dl>
             <div><dt>패디플래닝<small>여자 · 남자</small></dt><dd>55,000 · 65,000원</dd></div>
