@@ -7,7 +7,7 @@ adelabeauty-sample/
 ├─ .assetsignore              img/ · _old/ · 문서 · index_*.html · _deploy 배포 제외
 ├─ ad-script.woff2            영문 스크립트 (Monsieur La Doulaise, 라틴만)
 ├─ ad-pretendard.woff2        한글 · 본문 (Pretendard 300–700, 쓰는 글자만)
-├─ ad-hero.webp               히어로 (튤립 · 제품)
+├─ ad-hero.webp               히어로 (인물 프로필 · img 543832629_…_n.jpg 4:5 864×1080, og도 같은 사진)
 ├─ ad-wax / ad-perm / ad-ext / ad-pedi .webp   Care 카드 4장
 ├─ favicon.png · og-adela.jpg
 ├─ img/                       다올 제공 원본 95장 (배포 제외 · 얼굴 · 다른 브랜드 포함, 레포에 올리지 말 것)

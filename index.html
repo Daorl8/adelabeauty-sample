@@ -48,7 +48,6 @@
   --brown-dk:#6E5644;
   --sage:#B3BDB0;
   --star:#EDB83F;
-  --chip:#F7F3EE;
   --line:#EAE3DB;
   --script:"AD Script","AD Sans",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   --sans:"AD Sans",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
@@ -65,8 +64,8 @@ ul{ padding:0; list-style:none; }
 :focus-visible{ outline:2px solid var(--brown); outline-offset:3px; }
 .wrap{ width:min(100% - 40px, var(--wrap)); margin:0 auto; }
 .sec{ padding:88px 0; }
-.beige{ background:var(--cream); --card:#FFFFFF; --chip:#F7F3EE; }
-.white{ background:var(--paper); --card:#F7F3EE; --chip:#FFFFFF; }
+.beige{ background:var(--cream); --card:#FFFFFF; }
+.white{ background:var(--paper); --card:#F7F3EE; }
 @media (min-width:900px){ .sec{ padding:128px 0; } }
 
 /* 섹션 머리: 스크립트 영문 + 갈색 가는 선 */
@@ -119,7 +118,7 @@ ul{ padding:0; list-style:none; }
 
 /* 배경 무늬: 필기체 Adela 큰 글씨를 아주 옅게 (히어로 · 리뷰 두 곳만) */
 .hero, #review{ position:relative; overflow:hidden; }
-.hero::before, #review::before{ content:"Adela"; position:absolute; z-index:0; pointer-events:none; font-family:var(--script); line-height:1; color:var(--brown); opacity:.05; white-space:nowrap; }
+.hero::before, #review::before{ content:"Adela"; content:"Adela"/""; position:absolute; z-index:0; pointer-events:none; font-family:var(--script); line-height:1; color:var(--brown); opacity:.05; white-space:nowrap; }
 .hero::before{ font-size:clamp(14rem,38vw,30rem); right:-4%; bottom:-12%; }
 #review::before{ font-size:clamp(12rem,32vw,26rem); right:-6%; bottom:-14%; }
 .hero .wrap, #review .wrap{ position:relative; z-index:1; }
@@ -480,7 +479,7 @@ ul{ padding:0; list-style:none; }
       if(t>T){ var f=Math.min(1,(t-T)/F); ps.forEach(function(p){ p.style.fillOpacity=f; }); }
       if(t>T+F){ clearInterval(iv); ps.forEach(function(p){ p.style.strokeDasharray=''; p.style.strokeDashoffset=''; }); }
     },16);
-    setTimeout(function(){ if(svg.classList.contains('draw')){ ps.forEach(function(p){ p.style.fillOpacity=1; p.style.strokeDashoffset=0; }); } },8000);
+    setTimeout(function(){ clearInterval(iv); if(svg.classList.contains('draw')){ ps.forEach(function(p){ p.style.fillOpacity=1; p.style.strokeDashoffset=0; }); } },8000);
   })();
   var head=document.querySelector('.site-head');
   [].forEach.call(document.querySelectorAll('a[href^="#"]'),function(a){
