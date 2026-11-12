@@ -16,7 +16,7 @@
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="theme-color" content="#F3EDE7" />
+<meta name="theme-color" content="#FFFFFF" />
 <link rel="icon" href="favicon.png" type="image/png" />
 <!-- 시안 도메인 = adelabeauty-sample.lgt3232.workers.dev. 고객 인계 시 grep lgt3232 → canonical·og:url·og:image·JSON-LD url/image 치환 -->
 <script type="application/ld+json">
@@ -39,14 +39,16 @@
 @font-face{ font-family:"AD Sans"; font-weight:300 700; font-display:swap; src:url("ad-pretendard.woff2") format("woff2"); }
 
 :root{
-  --cream:#F3EDE7;
+  --cream:#F7F3EE;
   --paper:#FFFFFF;
-  --ink:#3B332D;
-  --soft:#6E6259;
-  --brown:#6B4B2E;
-  --sage:#9AA697;
-  --chip:#F4F2F0;
-  --line:#E4DAD0;
+  --card:#FFFFFF;
+  --ink:#4A423C;
+  --soft:#736860;
+  --brown:#846852;
+  --brown-dk:#6E5644;
+  --sage:#B3BDB0;
+  --chip:#F7F3EE;
+  --line:#EAE3DB;
   --script:"AD Script","AD Sans",-apple-system,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   --sans:"AD Sans",-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic",sans-serif;
   --wrap:1080px;
@@ -54,7 +56,7 @@
 }
 *,*::before,*::after{ box-sizing:border-box; }
 html{ -webkit-text-size-adjust:100%; }
-body{ margin:0; background:var(--cream); color:var(--ink); font-family:var(--sans); font-weight:400; font-size:16px; line-height:1.8; word-break:keep-all; overflow-wrap:break-word; }
+body{ margin:0; background:var(--paper); color:var(--ink); font-family:var(--sans); font-weight:400; font-size:16px; line-height:1.8; word-break:keep-all; overflow-wrap:break-word; }
 img{ max-width:100%; height:auto; display:block; }
 a{ color:inherit; text-decoration:none; }
 h1,h2,h3,p,ul,dl,dd{ margin:0; }
@@ -62,6 +64,8 @@ ul{ padding:0; list-style:none; }
 :focus-visible{ outline:2px solid var(--brown); outline-offset:3px; }
 .wrap{ width:min(100% - 40px, var(--wrap)); margin:0 auto; }
 .sec{ padding:88px 0; }
+.beige{ background:var(--cream); --card:#FFFFFF; --chip:#F7F3EE; }
+.white{ background:var(--paper); --card:#F7F3EE; --chip:#FFFFFF; }
 @media (min-width:900px){ .sec{ padding:128px 0; } }
 
 /* 섹션 머리: 스크립트 영문 + 갈색 가는 선 */
@@ -76,10 +80,10 @@ ul{ padding:0; list-style:none; }
 .btn{ display:inline-flex; align-items:center; justify-content:center; gap:8px; min-height:50px; padding:0 24px; border:1px solid var(--brown); border-radius:var(--r); color:var(--brown); font-size:.94rem; font-weight:600; background:transparent; transition:background .2s ease, color .2s ease, transform .15s ease; }
 .btn.fill{ background:var(--brown); color:#FFFFFF; }
 .btn:active{ transform:scale(.98); }
-@media (hover:hover){ .btn:not(.fill):hover{ background:var(--brown); color:#FFFFFF; } .btn.fill:hover{ background:#4F3620; border-color:#4F3620; } }
+@media (hover:hover){ .btn:not(.fill):hover{ background:var(--brown); color:#FFFFFF; } .btn.fill:hover{ background:var(--brown-dk); border-color:var(--brown-dk); } }
 
 /* 헤더 */
-.site-head{ position:sticky; top:0; z-index:50; background:rgba(243,237,231,.96); border-bottom:1px solid var(--line); }
+.site-head{ position:sticky; top:0; z-index:50; background:rgba(255,255,255,.96); border-bottom:1px solid var(--line); }
 .site-head .wrap{ display:flex; align-items:center; justify-content:space-between; gap:16px; min-height:64px; }
 .brand{ display:flex; align-items:baseline; gap:10px; }
 .brand b{ font-family:var(--script); font-weight:400; font-size:2.1rem; line-height:1; color:var(--brown); }
@@ -107,14 +111,14 @@ ul{ padding:0; list-style:none; }
 .hero .cta{ display:flex; flex-wrap:wrap; gap:8px; margin-top:30px; }
 .hero .note{ margin-top:18px; font-size:.9rem; color:var(--soft); }
 .hero .note b{ color:var(--ink); font-weight:600; }
-.hero figure{ margin:0; padding:14px; background:var(--paper); }
+.hero figure{ margin:0; padding:14px; background:var(--cream); }
 .hero figure img{ width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:var(--r); }
 
 /* 케어 */
 .care-grid{ display:grid; grid-template-columns:minmax(0,1fr); gap:20px; }
 @media (min-width:640px){ .care-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media (min-width:900px){ .care-grid{ grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; } }
-.card{ background:var(--paper); padding:18px 18px 24px; }
+.card{ background:var(--card); padding:18px 18px 24px; }
 .card img{ width:100%; aspect-ratio:1; object-fit:cover; border-radius:var(--r); }
 .card .no{ display:block; margin-top:18px; font-size:.8rem; font-weight:600; color:var(--soft); letter-spacing:.08em; }
 .card .en{ display:block; font-family:var(--script); font-size:2.3rem; line-height:1.15; color:var(--brown); }
@@ -129,7 +133,7 @@ ul{ padding:0; list-style:none; }
 /* 리뷰 */
 .reviews{ display:grid; grid-auto-flow:column; grid-auto-columns:minmax(0,86%); gap:14px; overflow-x:auto; scroll-snap-type:x mandatory; padding-bottom:10px; scrollbar-width:thin; }
 @media (min-width:900px){ .reviews{ grid-auto-flow:row; grid-auto-columns:auto; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; overflow:visible; } }
-.review{ scroll-snap-align:start; background:var(--paper); padding:26px 24px; display:flex; flex-direction:column; gap:12px; }
+.review{ scroll-snap-align:start; background:var(--card); padding:26px 24px; display:flex; flex-direction:column; gap:12px; }
 .review .top{ display:flex; justify-content:space-between; align-items:center; gap:12px; }
 .review .who{ font-weight:600; font-size:.95rem; }
 .review .mini{ display:flex; gap:3px; }
@@ -142,18 +146,18 @@ ul{ padding:0; list-style:none; }
 /* 가격 */
 .price-grid{ display:grid; grid-template-columns:minmax(0,1fr); gap:24px; }
 @media (min-width:900px){ .price-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; } }
-.price{ background:var(--paper); padding:26px 24px 12px; }
+.price{ background:var(--card); padding:26px 24px 12px; }
 .price h3{ display:flex; align-items:baseline; justify-content:space-between; gap:12px; padding-bottom:10px; border-bottom:1px solid var(--brown); font-size:1.04rem; font-weight:600; }
 .price h3 span{ font-family:var(--script); font-weight:400; font-size:1.9rem; line-height:1; color:var(--brown); }
 .price dl div{ display:grid; grid-template-columns:minmax(0,1fr) auto; gap:14px; padding:12px 0; border-bottom:1px solid var(--line); font-size:.94rem; }
 .price dl div:last-child{ border-bottom:0; }
 .price dt small{ display:block; font-size:.82rem; color:var(--soft); }
 .price dd{ font-variant-numeric:tabular-nums; white-space:nowrap; font-weight:500; }
-.price-note{ margin-top:24px; padding:20px 22px; border:1px solid var(--brown); display:grid; gap:12px; font-size:.94rem; }
+.price-note{ margin-top:24px; padding:20px 22px; background:var(--paper); border:1px solid var(--brown); display:grid; gap:12px; font-size:.94rem; }
 @media (min-width:900px){ .price-note{ grid-template-columns:minmax(0,1fr) auto; align-items:center; } }
 
 /* 예약 안내 */
-.book{ background:var(--paper); padding:30px 26px; display:grid; gap:24px; }
+.book{ background:var(--card); padding:30px 26px; display:grid; gap:24px; }
 @media (min-width:900px){ .book{ grid-template-columns:minmax(0,1fr) auto; align-items:center; padding:40px 44px; } }
 .book ul{ display:grid; gap:8px; }
 .book li{ position:relative; padding-left:16px; color:var(--ink); }
@@ -176,14 +180,14 @@ ul{ padding:0; list-style:none; }
 @media (min-width:768px){ .map{ height:auto; aspect-ratio:4/3; } }
 
 /* 푸터 */
-.foot{ border-top:1px solid var(--brown); padding:52px 0 calc(110px + env(safe-area-inset-bottom)); text-align:center; font-size:.86rem; color:var(--soft); }
+.foot{ background:var(--cream); border-top:1px solid var(--line); padding:52px 0 calc(110px + env(safe-area-inset-bottom)); text-align:center; font-size:.86rem; color:var(--soft); }
 @media (min-width:900px){ .foot{ padding:60px 0; } }
 .foot .logo{ font-family:var(--script); font-size:2.6rem; line-height:1; color:var(--brown); }
 .foot p + p{ margin-top:6px; }
 .foot a{ text-decoration:underline; text-underline-offset:3px; }
 
 /* 모바일 하단 바 */
-.quick{ position:fixed; left:0; right:0; bottom:0; z-index:60; display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr); gap:6px; padding:8px 10px calc(8px + env(safe-area-inset-bottom)); background:#F3EDE7; border-top:1px solid var(--line); }
+.quick{ position:fixed; left:0; right:0; bottom:0; z-index:60; display:grid; grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr); gap:6px; padding:8px 10px calc(8px + env(safe-area-inset-bottom)); background:#FFFFFF; border-top:1px solid var(--line); }
 .quick a{ display:flex; align-items:center; justify-content:center; min-height:48px; border:1px solid var(--brown); border-radius:var(--r); color:var(--brown); font-size:.88rem; font-weight:600; background:#FFFFFF; }
 .quick a.fill{ background:var(--brown); color:#FFFFFF; }
 @media (min-width:900px){ .quick{ display:none; } }
@@ -230,7 +234,7 @@ ul{ padding:0; list-style:none; }
     </div>
   </section>
 
-  <section class="sec" id="care" aria-labelledby="care-h">
+  <section class="sec beige" id="care" aria-labelledby="care-h">
     <div class="wrap">
       <div class="head reveal"><span class="script" aria-hidden="true">Care</span><h2 id="care-h">시술 안내</h2></div>
       <div class="care-grid">
@@ -267,7 +271,7 @@ ul{ padding:0; list-style:none; }
     </div>
   </section>
 
-  <section class="sec" id="review" aria-labelledby="review-h">
+  <section class="sec white" id="review" aria-labelledby="review-h">
     <div class="wrap">
       <div class="head reveal">
         <div><span class="script" aria-hidden="true">Review</span><h2 id="review-h" class="sr-only">고객 리뷰</h2></div>
@@ -296,7 +300,7 @@ ul{ padding:0; list-style:none; }
     </div>
   </section>
 
-  <section class="sec" id="price" aria-labelledby="price-h">
+  <section class="sec beige" id="price" aria-labelledby="price-h">
     <div class="wrap">
       <div class="head reveal"><span class="script" aria-hidden="true">Price</span><h2 id="price-h">기본 가격</h2></div>
       <div class="price-grid">
@@ -351,7 +355,7 @@ ul{ padding:0; list-style:none; }
     </div>
   </section>
 
-  <section class="sec" id="book" aria-labelledby="book-h">
+  <section class="sec white" id="book" aria-labelledby="book-h">
     <div class="wrap">
       <div class="head reveal"><span class="script" aria-hidden="true">Booking</span><h2 id="book-h">예약 안내</h2></div>
       <div class="book reveal">
@@ -369,7 +373,7 @@ ul{ padding:0; list-style:none; }
     </div>
   </section>
 
-  <section class="sec visit" id="visit" aria-labelledby="visit-h">
+  <section class="sec beige visit" id="visit" aria-labelledby="visit-h">
     <div class="wrap">
       <div class="head reveal"><span class="script" aria-hidden="true">Visit</span><h2 id="visit-h">오시는 길</h2></div>
       <div class="visit-grid">
